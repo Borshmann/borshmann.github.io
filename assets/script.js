@@ -131,7 +131,17 @@ var position = [
   "translateX(905px)","translateX(320px)",
   "translateX(905px)","translateX(320px)",
   "translateX(905px)","translateX(320px)"];
-
+  var position_min = [
+  'translateX(1000px)', "translateX(280px)",
+  "translateX(1000px)" , "translateX(550px)",
+  "translateX(1000px)","translateX(740px)",
+  "translateX(1000px)", "translateX(740px)",
+  "translateX(1000px)","translateX(170px)",
+  "translateX(1000px)","translateX(320px)" ,
+  "translateX(1000px)","translateX(320px)",
+  "translateX(1000px)","translateX(320px)",
+  "translateX(1000px)","translateX(320px)"];
+  
 var preloadedImages = [];
 
 for (var i = 0; i < images.length; i++) {
@@ -158,26 +168,54 @@ var temptime = 3;
 
 function MenuBtn(roll, number, bool, time) {
   var rollElement = document.getElementById(roll);
-  for (var menu in menuStates) {
-    if (menu !== roll && menuStates[menu] === true) {
-      closeMenu(menu,temp2,temp1,temptime);
+  console.log(self.innerWidth);
+  console.log(top.innerWidth);
+  if (window.innerWidth < 1025) {
+    console.log("minimum script");
+    for (var menu in menuStates) {
+      if (menu !== roll && menuStates[menu] === true) {
+        closeMenu(menu,temp2,temp1,temptime);
+      }
     }
-  }
-  if (menuStates[roll] === bool) {
-    rollElement.animate([
-      { transform: position[number] },
-      { transform: position[number + 1] }
-    ], {
-      duration: time,
-      fill: "forwards",
-      easing: "ease-in-out"
-    });
-    menuStates[roll] = true;
-    temp1 = position[number+1];
-    temp2 = position[number];
-    temptime = time;
+    if (menuStates[roll] === bool) {
+      rollElement.animate([
+        { transform: position_min[number] },
+        { transform: position_min[number + 1] }
+      ], {
+        duration: time,
+        fill: "forwards",
+        easing: "ease-in-out"
+      });
+      menuStates[roll] = true;
+      temp1 = position_min[number+1];
+      temp2 = position_min[number];
+      temptime = time;
+    } else {
+      closeMenu(roll,temp2,temp1,temptime);
+    }
   } else {
-    closeMenu(roll,temp2,temp1,temptime);
+    console.log("max script");
+    for (var menu in menuStates) {
+      if (menu !== roll && menuStates[menu] === true) {
+        closeMenu(menu,temp2,temp1,temptime);
+      }
+    }
+    if (menuStates[roll] === bool) {
+      rollElement.animate([
+        { transform: position[number] },
+        { transform: position[number + 1] }
+      ], {
+        duration: time,
+        fill: "forwards",
+        easing: "ease-in-out"
+      });
+      menuStates[roll] = true;
+      temp1 = position[number+1];
+      temp2 = position[number];
+      temptime = time;
+    } else {
+      closeMenu(roll,temp2,temp1,temptime);
+    }
   }
 }
 
