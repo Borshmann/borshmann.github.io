@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <script src="./assets/html2canvas.min.js"></script>
+    <title>Document</title>
+    <script>
+    </script>
+</head>
+<body>
+  <div class="main-wrapper">
+    <h2 class="rotate-text">Персональный конструктор православных изделий от ювелирной иконотеки «Дары Волхвов»</h2>
+    <div id="wiewport" class="wiewport">
+      <img id="layer_8" class="image img-layer-8"  src="./assets/img/layers/l8_white_onyx.webp" alt="">
+      <img id="layer_7_blur" class="image img-layer-7_blur"  src="./assets/img/layers/l7_glass.webp" alt="">
+      <img id="layer_7" class="image img-layer-7"  src="./assets/img/layers/l7_god_mother.webp" alt="">
+      <img id="layer_6" class="image img-layer-6"  src="./assets/img/layers/l6_silver.webp" alt="">
+      <img id="layer_5" class="image img-layer-5"  src="./assets/img/layers/l5_silver.webp" alt="">
+      <img id="layer_4" class="image img-layer-4"  src="./assets/img/layers/l4_brilliant.webp" alt="">
+      <img id="layer_3" class="image img-layer-3"  src="./assets/img/layers/l3_brilliant.webp" alt="">
+      <img id="layer_2" class="image img-layer-2"  src="./assets/img/layers/l2_brilliant.webp" alt="">
+      <img id="layer_1" class="image img-layer-1"  src="./assets/img/layers/l1_brilliant.webp" alt="">
+      <img id="layer_0" class="image img-layer-0"  src="./assets/img/layers/l0_brilliant.webp" alt="">
+    </div>
+
+    <h2 class="h2-peronal">Персонализация</h2>
+    <div class="test-control">
+      <div class="control">
+        <div id="control-box-8" class="control-box control-layer-8-thumbs" > 
+          <div id="current-mat-8" data-rolled="false" data-menu="menu8" class="current-material" onClick="MenuBtn('list_material_8', 0, false, 1000)">
+            <img id="layer_8_min" class="image img_square-big" src="./assets/img/icons/white_onyx.jpg" alt="">
+            <div class="name name-8">
+              <h3 class="current-title">
+                Подложка
+              </h3>
+              <p id="current_name_8">
+                Белый Оникс
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-material" id="list_material_8">
+          <div class="list-material-overfolw list-8">
+            <div class="material-and-desc">
+              <input onactivate="input()" type="image" class="button-square-min white-round" src="./assets/img/icons/black_onyx.jpg"
+              onClick="ChangeImgSrc('layer_8','layer_8_min',0,'./assets/img/icons/black_onyx.jpg','layer_8_desc_1', 'current_name_8')">
+              <p id="layer_8_desc_1" class="desc-none">Черный Оникс</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-square-min" src="./assets/img/icons/seraphinit.jpg" 
+              onClick="ChangeImgSrc('layer_8','layer_8_min',1,'./assets/img/icons/seraphinit.jpg','layer_8_desc_2', 'current_name_8')">
+              <p id="layer_8_desc_2" class="desc-none">Серафинит</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-square-min" src="./assets/img/icons/malahyt.jpg" 
+              onClick="ChangeImgSrc('layer_8','layer_8_min',2,'./assets/img/icons/malahyt.jpg','layer_8_desc_3', 'current_name_8')">
+              <p id="layer_8_desc_3" class="desc-none">Малахит</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-square-min" src="./assets/img/icons/lazurit_blue.jpg" 
+              onClick="ChangeImgSrc('layer_8','layer_8_min',3,'./assets/img/icons/lazurit_blue.jpg','layer_8_desc_4', 'current_name_8')">
+              <p id="layer_8_desc_4" class="desc-none">Лазурит Синий</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-square-min" src="./assets/img/icons/lazurit_skyblue.jpg" 
+              onClick="ChangeImgSrc('layer_8','layer_8_min',4,'./assets/img/icons/lazurit_skyblue.jpg','layer_8_desc_5', 'current_name_8')">
+              <p id="layer_8_desc_5" class="desc-none">Лазурит Голубой</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-square-min" src="./assets/img/icons/charaid.jpg" 
+              onClick="ChangeImgSrc('layer_8','layer_8_min',5,'./assets/img/icons/charaid.jpg','layer_8_desc_6', 'current_name_8')">
+              <p id="layer_8_desc_6" class="desc-none">Чараид</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-square-min" src="./assets/img/icons/crimson_agat.jpg" 
+              onClick="ChangeImgSrc('layer_8','layer_8_min',6,'./assets/img/icons/crimson_agat.jpg','layer_8_desc_7', 'current_name_8')">
+              <p id="layer_8_desc_7" class="desc-none">Малиновый Агат</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-square-min" src="./assets/img/icons/blue_agat.jpg" 
+              onClick="ChangeImgSrc('layer_8','layer_8_min',7,'./assets/img/icons/blue_agat.jpg','layer_8_desc_8', 'current_name_8')">
+              <p id="layer_8_desc_8" class="desc-none">Синий Агат</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-square-min" src="./assets/img/icons/orange_agat.jpg" 
+              onClick="ChangeImgSrc('layer_8','layer_8_min',8,'./assets/img/icons/orange_agat.jpg','layer_8_desc_9', 'current_name_8')">
+              <p id="layer_8_desc_9" class="desc-none">Оранж Агат</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-square-min" src="./assets/img/icons/pink_onyx.jpg" 
+              onClick="ChangeImgSrc('layer_8','layer_8_min',9,'./assets/img/icons/pink_onyx.jpg','layer_8_desc_10', 'current_name_8')">
+              <p id="layer_8_desc_10" class="desc-none">Розовый Оникс</p>
+            </div>
+            <div class="material-and-desc material-big-end">
+              <input type="image" class="button-square-min" src="./assets/img/icons/white_onyx.jpg" 
+              onClick="ChangeImgSrc('layer_8','layer_8_min',10,'./assets/img/icons/white_onyx.jpg','layer_8_desc_11', 'current_name_8')">
+              <p id="layer_8_desc_11" class="desc-none">Белый Оникс</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="control_box_7" class="control-box control-layer-7-thumbs" > 
+          <div class="current-material" id="current-mat-7" data-rolled="false" data-menu="menu7" onClick="MenuBtn('list_material_7', 2, false, 600)">
+            <img id="layer_7_min" class="image img-oval-big" src="./assets/img/icons/god_mother.png" alt="">
+            <div class="name name-7">
+              <h3 class="current-title">
+                Миниатюра
+              </h3>
+              <p id="current_name_7">
+                Божья матерь
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-material " id="list_material_7">
+          <div class="list-material-overfolw list-7">
+            <div class="material-and-desc">
+              <input type="image" class="button-oval" src="./assets/img/icons/god_mother.png" 
+              onClick="ChangeImgSrc('layer_7','layer_7_min',11,'./assets/img/icons/god_mother.png','layer_7_desc_1', 'current_name_7')">
+              <p id="layer_7_desc_1" class="desc-none">Божья матерь</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-oval" src="./assets/img/icons/revival.png" 
+              onClick="ChangeImgSrc('layer_7','layer_7_min',12,'./assets/img/icons/revival.png','layer_7_desc_2', 'current_name_7')">
+              <p id="layer_7_desc_2" class="desc-none">Воскресение</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-oval" src="./assets/img/icons/trinity.png" 
+              onClick="ChangeImgSrc('layer_7','layer_7_min',13,'./assets/img/icons/trinity.png','layer_7_desc_3', 'current_name_7')">
+              <p id="layer_7_desc_3" class="desc-none">Троица</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="control_box_6" class="control-box control-layer-6-thumbs">
+          <div class="current-material" id="current-mat-6" data-rolled="false" data-menu="menu6" onClick="MenuBtn('list_material_6',4, false, 400)">
+            <img id="layer_6_min" class="image img-round-big"  src="./assets/img/icons/silver.png" alt="">
+            <div class="name name-6">
+              <h3 class="current-title" id="title-6">
+                Металл основы
+              </h3>
+              <p id="current_name_6">
+                Серебро
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-material" id="list_material_6">
+          <div class="list-material-overfolw list-6">
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/gold.png" 
+              onClick="ChangeImgSrc('layer_6','layer_6_min',14,'./assets/img/icons/gold.png','layer_6_desc_1', 'current_name_6')">
+              <p id="layer_6_desc_1" class="desc-none">Золото</p>
+            </div>
+            <div class="material-and-desc material-small-end">
+              <input type="image" class="button-round" src="./assets/img/icons/silver.png" 
+              onClick="ChangeImgSrc('layer_6','layer_6_min',15,'./assets/img/icons/silver.png','layer_6_desc_2', 'current_name_6')">
+              <p id="layer_6_desc_2" class="desc-none">Серебро</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="control_box_5" class="control-box control-layer-5-thumbs">
+          <div class="current-material" id="current-mat-5" data-rolled="false" data-menu="menu5" onClick="MenuBtn('list_material_5', 6, false, 400)">
+            <img id="layer_5_min" class="image img-round-big"  src="./assets/img/icons/silver.png" alt="">
+            <div class="name name-6">
+              <h3 class="current-title" id="title-5">
+                Металл кастов
+              </h3>
+              <p id="current_name_5">
+                Серебро
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-material" id="list_material_5">
+          <div class="list-material-overfolw list-5">
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/gold.png" 
+              onClick="ChangeImgSrc('layer_5','layer_5_min',16,'./assets/img/icons/gold.png','layer_5_desc_1', 'current_name_5')">
+              <p id="layer_5_desc_1" class="desc-none">Золото</p>
+            </div>
+            <div class="material-and-desc material-small-end">
+              <input type="image" class="button-round" src="./assets/img/icons/silver.png" 
+              onClick="ChangeImgSrc('layer_5','layer_5_min',17,'./assets/img/icons/silver.png','layer_5_desc_2', 'current_name_5')">
+              <p id="layer_5_desc_2" class="desc-none">Серебро</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="control_box_4" class="control-box control-layer-4-thumbs">
+          <div class="current-material" id="current-mat-4" data-rolled="false" data-menu="menu4" onClick="MenuBtn('list_material_4',8, false, 700)">
+            <img id="layer_4_min" class="image img-round-big"  src="./assets/img/icons/brilliant.png" alt="">
+            <div class="name name-6">
+              <h3 class="current-title" id="title-4">
+                Отделка бортов
+              </h3>
+              <p id="current_name_4">
+                Бриллиант
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-material" id="list_material_4">
+          <div class="list-material-overfolw list-4">
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/emerald.png" 
+              onClick="ChangeImgSrc('layer_4','layer_4_min',18,'./assets/img/icons/emerald.png','layer_4_desc_1', 'current_name_4')">
+              <p id="layer_4_desc_1" class="desc-none">Изумруд</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/citrin.png" 
+              onClick="ChangeImgSrc('layer_4','layer_4_min',19,'./assets/img/icons/citrin.png','layer_4_desc_2', 'current_name_4')">
+              <p id="layer_4_desc_2" class="desc-none">Цитрин</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/granat.png" 
+              onClick="ChangeImgSrc('layer_4','layer_4_min',20,'./assets/img/icons/granat.png','layer_4_desc_3', 'current_name_4')">
+              <p id="layer_4_desc_3" class="desc-none">Гранат</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/topaz.png" 
+              onClick="ChangeImgSrc('layer_4','layer_4_min',21,'./assets/img/icons/topaz.png','layer_4_desc_4', 'current_name_4')">
+              <p id="layer_4_desc_4" class="desc-none">Топаз</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/rubin.png" 
+              onClick="ChangeImgSrc('layer_4','layer_4_min',22,'./assets/img/icons/rubin.png','layer_4_desc_5', 'current_name_4')">
+              <p id="layer_4_desc_5" class="desc-none">Рубин</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/amethyst.png" 
+              onClick="ChangeImgSrc('layer_4','layer_4_min',23,'./assets/img/icons/amethyst.png','layer_4_desc_6', 'current_name_4')">
+              <p id="layer_4_desc_6" class="desc-none">Аметист</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/saphir.png" 
+              onClick="ChangeImgSrc('layer_4','layer_4_min',24,'./assets/img/icons/saphir.png','layer_4_desc_7', 'current_name_4')">
+              <p id="layer_4_desc_7" class="desc-none">Сапфир</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/brilliant.png" 
+              onClick="ChangeImgSrc('layer_4','layer_4_min',25,'./assets/img/icons/brilliant.png','layer_4_desc_8', 'current_name_4')">
+              <p id="layer_4_desc_8" class="desc-none">Бриллиант</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/cos_gold.png" 
+              onClick="ChangeImgSrc('layer_4','layer_4_min',26,'./assets/img/icons/gold.png','layer_4_desc_9', 'current_name_4')">
+              <p id="layer_4_desc_9" class="desc-none">Золотая косичка</p>
+            </div>
+            <div class="material-and-desc material-small-end">
+              <input type="image" class="button-round" src="./assets/img/icons/cos_silver.png" 
+              onClick="ChangeImgSrc('layer_4','layer_4_min',27,'./assets/img/icons/silver.png','layer_4_desc_11', 'current_name_4')">
+              <p id="layer_4_desc_11" class="desc-none">Серебряная косичка</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="control_box_3" class="control-box control-layer-3-thumbs">
+          <div class="current-material" id="current-mat-3" data-rolled="false" data-menu="menu3" onClick="MenuBtn('list_material_3',10, false,700)">
+            <img id="layer_3_min" class="image img-round-big"  src="./assets/img/icons/brilliant.png" alt="">
+            <div class="name name-6">
+              <h3 class="current-title" id="title-3">
+                Камни Акцент
+              </h3>
+              <p id="current_name_3">
+                Бриллиант
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-material " id="list_material_3">
+          <div class="list-material-overfolw list-3">
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/emerald.png" 
+              onClick="ChangeImgSrc('layer_3','layer_3_min',28,'./assets/img/icons/emerald.png','layer_3_desc_1', 'current_name_3')">
+              <p id="layer_3_desc_1" class="desc-none">Изумруд</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/citrin.png" 
+              onClick="ChangeImgSrc('layer_3','layer_3_min',29,'./assets/img/icons/citrin.png','layer_3_desc_2', 'current_name_3')">
+              <p id="layer_3_desc_2" class="desc-none">Цитрин</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/granat.png" 
+              onClick="ChangeImgSrc('layer_3','layer_3_min',30,'./assets/img/icons/granat.png','layer_3_desc_3', 'current_name_3')">
+              <p id="layer_3_desc_3" class="desc-none">Гранат</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/topaz.png" 
+              onClick="ChangeImgSrc('layer_3','layer_3_min',31,'./assets/img/icons/topaz.png','layer_3_desc_4', 'current_name_3')">
+              <p id="layer_3_desc_4" class="desc-none">Топаз</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/rubin.png" 
+              onClick="ChangeImgSrc('layer_3','layer_3_min',32,'./assets/img/icons/rubin.png','layer_3_desc_5', 'current_name_3')">
+              <p id="layer_3_desc_5" class="desc-none">Рубин</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/amethyst.png" 
+              onClick="ChangeImgSrc('layer_3','layer_3_min',33,'./assets/img/icons/amethyst.png','layer_3_desc_6', 'current_name_3')">
+              <p id="layer_3_desc_6" class="desc-none">Аметист</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/saphir.png" 
+              onClick="ChangeImgSrc('layer_3','layer_3_min',34,'./assets/img/icons/saphir.png','layer_3_desc_7', 'current_name_3')">
+              <p id="layer_3_desc_7" class="desc-none">Сапфир</p>
+            </div>
+            <div class="material-and-desc material-small-end">
+              <input type="image" class="button-round" src="./assets/img/icons/brilliant.png" 
+              onClick="ChangeImgSrc('layer_3','layer_3_min',35,'./assets/img/icons/brilliant.png','layer_3_desc_8', 'current_name_3')">
+              <p id="layer_3_desc_8" class="desc-none">Бриллиант</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="control_box_2" class="control-box control-layer-2-thumbs">
+          <div class="current-material" id="current-mat-2" data-rolled="false" data-menu="menu2" onClick="MenuBtn('list_material_2',12, false,700)">
+            <img id="layer_2_min" class="image img-round-big"  src="./assets/img/icons/brilliant.png" alt="">
+            <div class="name name-6">
+              <h3 class="current-title" id="title-2">
+                Камни в Кастах
+              </h3>
+              <p id="current_name_2">
+                Бриллиант
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-material " id="list_material_2">
+          <div class="list-material-overfolw list-2">
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/emerald.png" 
+              onClick="ChangeImgSrc('layer_2','layer_2_min',36,'./assets/img/icons/emerald.png','layer_2_desc_1', 'current_name_2')">
+              <p id="layer_2_desc_1" class="desc-none">Изумруд</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/citrin.png" 
+              onClick="ChangeImgSrc('layer_2','layer_2_min',37,'./assets/img/icons/citrin.png','layer_2_desc_2', 'current_name_2')">
+              <p id="layer_2_desc_2" class="desc-none">Цитрин</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/granat.png" 
+              onClick="ChangeImgSrc('layer_2','layer_2_min',38,'./assets/img/icons/granat.png','layer_2_desc_3', 'current_name_2')">
+              <p id="layer_2_desc_3" class="desc-none">Гранат</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/topaz.png" 
+              onClick="ChangeImgSrc('layer_2','layer_2_min',39,'./assets/img/icons/topaz.png','layer_2_desc_4', 'current_name_2')">
+              <p id="layer_2_desc_4" class="desc-none">Топаз</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/rubin.png" 
+              onClick="ChangeImgSrc('layer_2','layer_2_min',40,'./assets/img/icons/rubin.png','layer_2_desc_5', 'current_name_2')">
+              <p id="layer_2_desc_5" class="desc-none">Рубин</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/amethyst.png" 
+              onClick="ChangeImgSrc('layer_2','layer_2_min',41,'./assets/img/icons/amethyst.png','layer_2_desc_6', 'current_name_2')">
+              <p id="layer_2_desc_6" class="desc-none">Аметист</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/saphir.png" 
+              onClick="ChangeImgSrc('layer_2','layer_2_min',42,'./assets/img/icons/saphir.png','layer_2_desc_7', 'current_name_2')">
+              <p id="layer_2_desc_7" class="desc-none">Сапфир</p>
+            </div>
+            <div class="material-and-desc material-small-end">
+              <input type="image" class="button-round" src="./assets/img/icons/brilliant.png" 
+              onClick="ChangeImgSrc('layer_2','layer_2_min',43,'./assets/img/icons/brilliant.png','layer_2_desc_8', 'current_name_2')">
+              <p id="layer_2_desc_8" class="desc-none">Бриллиант</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="control_box_1" class="control-box control-layer-1-thumbs">
+          <div class="current-material" id="current-mat-1" data-rolled="false" data-menu="menu1" onClick="MenuBtn('list_material_1',14, false, 700)">
+            <img id="layer_1_min" class="image img-round-big"  src="./assets/img/icons/brilliant.png" alt="">
+            <div class="name name-6">
+              <h3 class="current-title" id="title-1">
+                Камни Центр
+              </h3>
+              <p id="current_name_1">
+                Бриллиант
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-material " id="list_material_1">
+          <div class="list-material-overfolw list-1">
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/emerald.png" 
+              onClick="ChangeImgSrc('layer_1','layer_1_min',44,'./assets/img/icons/emerald.png','layer_1_desc_1', 'current_name_1')">
+              <p id="layer_1_desc_1" class="desc-none">Изумруд</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/citrin.png" 
+              onClick="ChangeImgSrc('layer_1','layer_1_min',45,'./assets/img/icons/citrin.png','layer_1_desc_2', 'current_name_1')">
+              <p id="layer_1_desc_2" class="desc-none">Цитрин</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/granat.png" 
+              onClick="ChangeImgSrc('layer_1','layer_1_min',46,'./assets/img/icons/granat.png','layer_1_desc_3', 'current_name_1')">
+              <p id="layer_1_desc_3" class="desc-none">Гранат</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/topaz.png" 
+              onClick="ChangeImgSrc('layer_1','layer_1_min',47,'./assets/img/icons/topaz.png','layer_1_desc_4', 'current_name_1')">
+              <p id="layer_1_desc_4" class="desc-none">Топаз</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/rubin.png" 
+              onClick="ChangeImgSrc('layer_1','layer_1_min',48,'./assets/img/icons/rubin.png','layer_1_desc_5', 'current_name_1')">
+              <p id="layer_1_desc_5" class="desc-none">Рубин</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/amethyst.png" 
+              onClick="ChangeImgSrc('layer_1','layer_1_min',49,'./assets/img/icons/amethyst.png','layer_1_desc_6', 'current_name_1')">
+              <p id="layer_1_desc_6" class="desc-none">Аметист</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/saphir.png" 
+              onClick="ChangeImgSrc('layer_1','layer_1_min',50,'./assets/img/icons/saphir.png','layer_1_desc_7', 'current_name_1')">
+              <p id="layer_1_desc_7" class="desc-none">Сапфир</p>
+            </div>
+            <div class="material-and-desc material-small-end">
+              <input type="image" class="button-round" src="./assets/img/icons/brilliant.png" 
+              onClick="ChangeImgSrc('layer_1','layer_1_min',51,'./assets/img/icons/brilliant.png','layer_1_desc_8', 'current_name_1')">
+              <p id="layer_1_desc_8" class="desc-none">Бриллиант</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="control_box_0" class="control-box control-layer-0-thumbs">
+          <div class="current-material" id="current-mat-0" data-menu="menu0" data-rolled="false" onClick="MenuBtn('list_material_0',16, false, 700)">
+            <img id="layer_0_min" class="image img-round-big"  src="./assets/img/icons/brilliant.png" alt="">
+            <div class="name name-6">
+              <h3 class="current-title" id="title-0">
+                Камни Доп
+              </h3>
+              <p id="current_name_0">
+                Бриллиант
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-material " id="list_material_0">
+          <div class="list-material-overfolw list-0">
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/emerald.png" 
+              onClick="ChangeImgSrc('layer_0','layer_0_min',52,'./assets/img/icons/emerald.png','layer_0_desc_1', 'current_name_0')">
+              <p id="layer_0_desc_1" class="desc-none">Изумруд</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/citrin.png" 
+              onClick="ChangeImgSrc('layer_0','layer_0_min',53,'./assets/img/icons/citrin.png','layer_0_desc_2', 'current_name_0')">
+              <p id="layer_0_desc_2" class="desc-none">Цитрин</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/granat.png" 
+              onClick="ChangeImgSrc('layer_0','layer_0_min',54,'./assets/img/icons/granat.png','layer_0_desc_3', 'current_name_0')">
+              <p id="layer_0_desc_3" class="desc-none">Гранат</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/topaz.png" 
+              onClick="ChangeImgSrc('layer_0','layer_0_min',55,'./assets/img/icons/topaz.png','layer_0_desc_4', 'current_name_0')">
+              <p id="layer_0_desc_4" class="desc-none">Топаз</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/rubin.png" 
+              onClick="ChangeImgSrc('layer_0','layer_0_min',56,'./assets/img/icons/rubin.png','layer_0_desc_5', 'current_name_0')">
+              <p id="layer_0_desc_5" class="desc-none">Рубин</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/amethyst.png" 
+              onClick="ChangeImgSrc('layer_0','layer_0_min',57,'./assets/img/icons/amethyst.png','layer_0_desc_6', 'current_name_0')">
+              <p id="layer_0_desc_6" class="desc-none">Аметист</p>
+            </div>
+            <div class="material-and-desc">
+              <input type="image" class="button-round" src="./assets/img/icons/saphir.png" 
+              onClick="ChangeImgSrc('layer_0','layer_0_min',58,'./assets/img/icons/saphir.png','layer_0_desc_7', 'current_name_0')">
+              <p id="layer_0_desc_7" class="desc-none">Сапфир</p>
+            </div>
+            <div class="material-and-desc material-small-end">
+              <input type="image" class="button-round" src="./assets/img/icons/brilliant.png" 
+              onClick="ChangeImgSrc('layer_0','layer_0_min',59,'./assets/img/icons/brilliant.png','layer_0_desc_8', 'current_name_0')">
+              <p id="layer_0_desc_8" class="desc-none">Бриллиант</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="resrt-btn" class="test-random3" onClick="Reset()">
+        <h3 class="random-title">Сбросить</h3>
+      </button>
+    </div>
+    <button class="test-random" onClick="RandomPath()">
+      <img src="./assets/img/icons/control/autoplay.svg" alt="" srcset="">
+      <h3 class="current-title-medium">Случайно</h3>
+    </button>
+    <button id="screenshot-btn" class="test-random2" onClick="Screenshoot()">
+      <img src="./assets/img/icons/control/add_a_photo.svg" alt="" srcset="">
+      <h3 class="current-title-medium">Сохранить</h3>
+    </button>
+  </div>
+  <script src="./assets/script.js"></script>
+</body>
+</html>
