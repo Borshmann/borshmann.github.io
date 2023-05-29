@@ -131,7 +131,8 @@ var position = [
   "translateX(905px)","translateX(320px)",
   "translateX(905px)","translateX(320px)",
   "translateX(905px)","translateX(320px)"];
-  var position_min = [
+  
+var position_min = [
   'translateX(1000px)', "translateX(280px)",
   "translateX(1000px)" , "translateX(550px)",
   "translateX(1000px)","translateX(740px)",
