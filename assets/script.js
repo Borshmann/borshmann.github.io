@@ -267,6 +267,7 @@ function ChangeImgSrc(id, id_min, number, src_min, source, target) {
 
 function Screenshoot() {
   const container = document.getElementById('wiewport');
+  container.style.height = "950px";
   html2canvas(container,{
     scale: 3})
   .then(canvas => {
@@ -278,6 +279,7 @@ function Screenshoot() {
       link.click();
       document.body.removeChild(link);
   });
+  container.style.height = "0px";
 };
 
 function getRandomInRange(min, max) {
