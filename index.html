@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="main-wrapper">
-    <h2 class="rotate-text">Персональный конструктор православных изделий от ювелирной иконотеки «Дары Волхвов»</h2>
+    <!-- <h2 class="rotate-text">Персональный конструктор православных изделий от ювелирной иконотеки «Дары Волхвов»</h2> -->
     <div id="wiewport" class="wiewport">
       <img id="layer_8" class="image img-layer-8"  src="./assets/img/layers/l8_white_onyx.webp" alt="">
       <img id="layer_7_blur" class="image img-layer-7_blur"  src="./assets/img/layers/l7_glass.webp" alt="">
@@ -27,8 +27,11 @@
       <img id="layer_0" class="image img-layer-0"  src="./assets/img/layers/l0_brilliant.webp" alt="">
     </div>
 
-    <h2 class="h2-peronal">Персонализация</h2>
     <div class="test-control">
+      <h2 class="h2-peronal">Персонализация</h2>
+      <button id="resrt-btn" class="test-random3" onClick="Reset()">
+        <h3 class="random-title">Сбросить</h3>
+      </button>
       <div class="control">
         <div id="control-box-8" class="control-box control-layer-8-thumbs" > 
           <div id="current-mat-8" data-rolled="false" data-menu="menu8" class="current-material" onClick="MenuBtn('list_material_8', 0, false, 1000)">
@@ -501,16 +504,13 @@
           </div>
         </div>
       </div>
-      <button id="resrt-btn" class="test-random3" onClick="Reset()">
-        <h3 class="random-title">Сбросить</h3>
-      </button>
     </div>
     <button class="test-random" onClick="RandomPath()">
-      <img src="./assets/img/icons/control/autoplay.svg" alt="" srcset="">
+      <img class="icon-btn" src="./assets/img/icons/control/autoplay.svg" alt="" srcset="">
       <h3 class="current-title-medium">Случайно</h3>
     </button>
     <button id="screenshot-btn" class="test-random2" onClick="Screenshoot()">
-      <img src="./assets/img/icons/control/add_a_photo.svg" alt="" srcset="">
+      <img class="icon-btn" src="./assets/img/icons/control/add_a_photo.svg" alt="" srcset="">
       <h3 class="current-title-medium">Сохранить</h3>
     </button>
   </div>
