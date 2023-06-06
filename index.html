@@ -13,6 +13,20 @@
 </head>
 <body>
   <div class="main-wrapper">
+    <div class="btn-min">
+      <button class="random-btn-min" onClick="RandomPath()">
+        <img class="icon-btn" src="./assets/img/icons/control/autoplay.svg" alt="" srcset="">
+        <h3 class="current-title-medium">Случайно</h3>
+      </button>
+      <button id="resrt-btn" class="reset-btn-min" onClick="Reset()">
+        <img class="icon-btn icon-reset" src="./assets/img/icons/control/delete.svg" alt="" srcset="">
+        <h3 class="random-title">Сбросить</h3>
+      </button>
+      <button id="screenshot-btn" class="screenshot-btn-min" onClick="Screenshot()">
+        <img class="icon-btn" src="./assets/img/icons/control/add_a_photo.svg" alt="" srcset="">
+        <h3 class="current-title-medium">Сохранить</h3>
+      </button>
+    </div>
     <!-- <h2 class="rotate-text">Персональный конструктор православных изделий от ювелирной иконотеки «Дары Волхвов»</h2> -->
     <div id="wiewport" class="wiewport">
       <img id="layer_8" class="image img-layer-8"  src="./assets/img/layers/l8_white_onyx.webp" alt="">
@@ -27,9 +41,9 @@
       <img id="layer_0" class="image img-layer-0"  src="./assets/img/layers/l0_brilliant.webp" alt="">
     </div>
 
-    <div class="test-control">
+    <div class="control-wrapper">
       <h2 class="h2-peronal">Персонализация</h2>
-      <button id="resrt-btn" class="test-random3" onClick="Reset()">
+      <button id="reset-btn" class="reset-btn btn-max" onClick="Reset()">
         <h3 class="random-title">Сбросить</h3>
       </button>
       <div class="control">
@@ -505,14 +519,16 @@
         </div>
       </div>
     </div>
-    <button class="test-random" onClick="RandomPath()">
-      <img class="icon-btn" src="./assets/img/icons/control/autoplay.svg" alt="" srcset="">
-      <h3 class="current-title-medium">Случайно</h3>
-    </button>
-    <button id="screenshot-btn" class="test-random2" onClick="Screenshoot()">
-      <img class="icon-btn" src="./assets/img/icons/control/add_a_photo.svg" alt="" srcset="">
-      <h3 class="current-title-medium">Сохранить</h3>
-    </button>
+    <div class="btn-box">
+      <button class="random-btn btn-max " onClick="RandomPath()">
+        <img class="icon-btn" src="./assets/img/icons/control/autoplay.svg" alt="" srcset="">
+        <h3 class="current-title-medium">Случайно</h3>
+      </button>
+      <button id="screenshot-btn" class="screenshot-btn btn-max" onClick="Screenshot()">
+        <img class="icon-btn" src="./assets/img/icons/control/add_a_photo.svg" alt="" srcset="">
+        <h3 class="current-title-medium">Сохранить</h3>
+      </button>
+    </div>
   </div>
   <script src="./assets/script.js"></script>
 </body>
