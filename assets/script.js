@@ -133,15 +133,15 @@ var position = [
   "translateX(905px)","translateX(320px)"];
 
 var position_min = [
-  'translateX(1000px)', "translateX(280px)",
-  "translateX(1000px)" , "translateX(750px)",
-  "translateX(1000px)","translateX(870px)",
-  "translateX(1000px)", "translateX(740px)",
-  "translateX(1000px)","translateX(170px)",
-  "translateX(1000px)","translateX(320px)" ,
-  "translateX(1000px)","translateX(320px)",
-  "translateX(1000px)","translateX(320px)",
-  "translateX(1000px)","translateX(320px)"];
+  'translateX(850px)', "translateX(340px)",
+  "translateX(850px)" , "translateX(700px)",
+  "translateX(850px)","translateX(755px)",
+  "translateX(850px)","translateX(755px)",
+  "translateX(850px)","translateX(390px)",
+  "translateX(850px)","translateX(450px)" ,
+  "translateX(850px)","translateX(450px)",
+  "translateX(850px)","translateX(450px)",
+  "translateX(850px)","translateX(450px)"];
   
 var preloadedImages = [];
 
@@ -171,7 +171,7 @@ function MenuBtn(roll, number, bool, time) {
   var rollElement = document.getElementById(roll);
   console.log(self.innerWidth);
   console.log(top.innerWidth);
-  if (window.innerWidth < 1025) {
+  if (window.innerWidth < 1001) {
     console.log("minimum script");
     for (var menu in menuStates) {
       if (menu !== roll && menuStates[menu] === true) {
@@ -304,7 +304,7 @@ function ChangeImgSrc(id, id_min, number, src_min, source, target) {
   };
 }
 
-function Screenshoot() {
+function Screenshot() {
   const container = document.getElementById('wiewport');
   container.style.height = "950px";
   html2canvas(container,{
