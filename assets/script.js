@@ -306,7 +306,7 @@ function ChangeImgSrc(id, id_min, number, src_min, source, target) {
 
 function Screenshot() {
   const container = document.getElementById('wiewport');
-  container.style.height = "950px";
+  container.style.height = "650px";
   html2canvas(container,{
     scale: 3})
   .then(canvas => {
